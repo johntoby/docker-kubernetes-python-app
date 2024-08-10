@@ -66,3 +66,41 @@ minikube start
 ```
 Create deployment.yaml file to deploy the image
 
+![deployment yaml](https://github.com/user-attachments/assets/a3eab172-ff5b-4aec-b1a7-e67d32824284)
+
+run this command to check if your deployment is created successfully 
+```
+kubectl get deployment
+```
+
+
+![deployment-created](https://github.com/user-attachments/assets/f3d89356-38f3-4b7d-98b9-e7d5b3d56eb7)
+
+
+Create your service.yaml file to expose the application on port 5000 
+![service yaml](https://github.com/user-attachments/assets/b528686c-b822-440b-9482-1b5785e7c825)
+
+Run this command to check if your service is successfully created 
+```
+kubectl get service
+```
+
+![service-created](https://github.com/user-attachments/assets/3991997e-1394-474e-ac8e-8f0dae5b1ae3)
+
+To check the service, run this command
+```
+minikube service
+```
+![service-running](https://github.com/user-attachments/assets/b3bf6072-9d27-4e80-9d1f-458b79c5d83a)
+
+Finally, to port-forward the service to be able to view it on the browser, run this command:
+```
+kubectl port-forward service/kodecamp-service 5000:5000
+```
+The application should be available on the browser at localhost:5000 
+
+![finalapp-port-5000](https://github.com/user-attachments/assets/7fa8c251-f4c5-40e7-8cd8-597d3e961757)
+
+Thanks. 
+
+
