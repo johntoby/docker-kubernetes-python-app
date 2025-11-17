@@ -1,5 +1,5 @@
 # docker-kubernetes-python-app
-This project is a simple Python flask application, that is containerized by docker and deployed using Kubernetes. 
+This project is a Python flask application, that is containerized by docker and deployed using Kubernetes. 
 
 The Architecture of the project will flow like this: 
 ![johntoby python app drawio](https://github.com/user-attachments/assets/a78bb019-4f31-4e3c-a44b-0b44dc5eca84)
@@ -31,7 +31,7 @@ After creating the application source code, and the requirements file, we will w
 ![dockerfile2](https://github.com/user-attachments/assets/a8c8b989-eb53-4749-9c27-3c66f1536887)
 
 
-to build the docker image, run this command 
+To build the docker image, run this command 
 ```
 docker build -t johntoby/python-app .
 ```
