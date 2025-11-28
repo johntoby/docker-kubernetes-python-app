@@ -31,7 +31,7 @@ After creating the application source code, and the requirements file, we will w
 ![dockerfile2](https://github.com/user-attachments/assets/a8c8b989-eb53-4749-9c27-3c66f1536887)
 
 
-To build the docker image, run this command 
+To build the docker image, run this simple command 
 ```
 docker build -t johntoby/python-app .
 ```
